@@ -126,3 +126,11 @@ div.row.f:hover {
   color: aliceblue;
   font-weight: bold;
 }
+.guthub {
+  text-align: center;
+}
+.image {
+  width: 130px;
+  height: 130px;
+  filter: drop-shadow(17px 10px 18px rgba(23, 23, 23, 0.4));
+}
