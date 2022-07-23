@@ -126,8 +126,10 @@ div.row.f:hover {
   color: aliceblue;
   font-weight: bold;
 }
-.guthub {
+.git {
   text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 .image {
   width: 150px;
