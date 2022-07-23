@@ -1,0 +1,128 @@
+body {
+  background-color: #000a18;
+  font-family: "Merriweather", serif;
+  font-family: "Signika Negative", sans-serif;
+}
+.height {
+  height: 10vh;
+}
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+.fa-microphone {
+  color: #d1d5db;
+}
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+header {
+  background: rgb(87, 214, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(87, 214, 255, 0.9472382703081232) 0%,
+    rgba(88, 172, 255, 1) 35%,
+    rgba(0, 97, 213, 1) 100%
+  );
+  color: snow;
+  margin: auto 10% 30px 10%;
+  border-radius: 50px;
+  /*box-shadow: 0px 12px 50px 11px rgba(45, 174, 240, 0.81);*/
+
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 16px 22px 1px rgba(0, 59, 255, 0.82);
+}
+ul.tomorrowforcast {
+  text-align: center;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+ul.headerlist {
+  text-align: center;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+div.col-6 {
+  text-align: center;
+  margin: 0 auto;
+}
+.col-4.f {
+  color: rgba(214, 214, 214, 0.753);
+  text-align: center;
+  margin: 20px auto;
+}
+.col-sm {
+  color: rgba(214, 214, 214, 0.753);
+  font-size: 18px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 30px auto;
+}
+div.row.f:hover {
+  background-color: rgba(83, 83, 83, 0.483);
+  color: #000a18;
+  border-radius: 20px;
+  transition: 200ms ease-in-out;
+}
+.search {
+  text-align: center;
+  margin: 0 30px;
+}
+.emoji {
+  font-size: 150px;
+  text-align: center;
+  padding: 0 auto;
+}
+.city {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.hightemp {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.62);
+  margin-top: 0;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+}
+.fading {
+  color: rgba(213, 211, 211, 0.434);
+}
+.ht {
+  color: aliceblue;
+  font-weight: bold;
+}
