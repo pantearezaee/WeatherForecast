@@ -26,11 +26,10 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row">
-          <span class="search">
-            <div class="container">
-              <div
+
+        <span class="search">
+          <div class="container">
+            <div
                 class="row height d-flex justify-content-center align-items-center"
               >
                 <div class="col-md-6">
@@ -42,32 +41,24 @@
                       placeholder="Search anything..."
                       id="form"
                     />
-                    <!-- <input type="submit" value="submit" />-->
-                    <span class="left-pan"
-                      ><!--<i class="fa fa-microphone"></i
-                    >-->
-                    </span>
-                  </div>
                 </div>
-              </div>
-            </div></span
-          >
-        </div>
+               </div>
+            </div>
+          </div>
+        </span>
         <div class="row">
           <div class="col-6">
-            <!--  <img src="https://static.vecteezy.com/system/resources/previews/006/864/217/original/cloud-with-rain-3d-realistic-weather-icon-isolated-illustration-realistic-3d-icon-design-vector.jpg" alt=""> -->
             <span class="emoji"><img src="24.png" class="image" /></span>
           </div>
           <div class="col-6">
             <ul class="tomorrowforcast">
-              <!-- <li><button id="currloc">Current Location</button></li>-->
               <li class="city" id="city">Berlin</li>
               <li class="fading" id="displayDateTime">Rainy-Cloudy</li>
               <li class="temperature">
                 <span class="hightemp">20°</span
                 ><span class="lowtemp fading">/17°</span>
-                <a href="#" class="celsius"> C | </a
-                ><a href="#" class="fahrenheit"> F </a>
+                <a href="#" id="celsius" class="deactive"> C  </a 
+                > | <a href="#" id="fahrenheit"> F </a>
               </li>
             </ul>
           </div>
@@ -75,55 +66,56 @@
       </div>
       <div class="container">
         <div class="row">
+                    <div class="col-4">
+            <ul class="headerlist">
+              <li>🌬</li>
+              <li id="status">Cloudy</li>
+              <li class="fading">Status</li>
+            </ul>
+          </div>
           <div class="col-4">
             <ul class="headerlist">
               <li>💨</li>
-              <li>9 km/h</li>
+              <li id="wind">9 km/h</li>
               <li class="fading">Wind</li>
             </ul>
           </div>
           <div class="col-4">
             <ul class="headerlist">
               <li>💧</li>
-              <li>31%</li>
+              <li id="humidity">31%</li>
               <li class="fading">Humidity</li>
             </ul>
           </div>
-          <div class="col-4">
-            <ul class="headerlist">
-              <li>🌬</li>
-              <li>93%</li>
-              <li class="fading">Chance of rain</li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </header>
     <div class="container">
       <div class="row f">
-        <div class="col-sm one">Mon</div>
-        <div class="col-sm">🌦 Rainy</div>
-        <div class="col-sm"><span class="ht">+20°</span> +14°</div>
+        <div class="col-4 one">Mon</div>
+        <div class="col-4">🌦 Rainy</div>
+        <div class="col-4"><span class="ht">+20°</span> +14°</div>
       </div>
       <div class="row f">
-        <div class="col-sm two">Tue</div>
-        <div class="col-sm">🌧 Rainy</div>
-        <div class="col-sm"><span class="ht">+22°</span> +16°</div>
+        <div class="col-4 two">Tue</div>
+        <div class="col-4">🌧 Rainy</div>
+        <div class="col-4"><span class="ht">+22°</span> +16°</div>
       </div>
       <div class="row f">
-        <div class="col-sm three">Wed</div>
-        <div class="col-sm">🌩 Storm</div>
-        <div class="col-sm"><span class="ht">+19°</span> +13°</div>
+        <div class="col-4 three">Wed</div>
+        <div class="col-4">🌩 Storm</div>
+        <div class="col-4"><span class="ht">+19°</span> +13°</div>
       </div>
       <div class="row f">
-        <div class="col-sm four">Thu</div>
-        <div class="col-sm">🌤 Slow</div>
-        <div class="col-sm"><span class="ht">+18°</span> +12°</div>
+        <div class="col-4 four">Thu</div>
+        <div class="col-4">🌤 Slow</div>
+        <div class="col-4"><span class="ht">+18°</span> +12°</div>
       </div>
       <div class="row f">
-        <div class="col-sm five">Fri</div>
-        <div class="col-sm">⛈ Thunder</div>
-        <div class="col-sm"><span class="ht">+23°</span> +19°</div>
+        <div class="col-4 five">Fri</div>
+        <div class="col-4">⛈ Thunder</div>
+        <div class="col-4"><span class="ht">+23°</span> +19°</div>
       </div>
     </div>
 
