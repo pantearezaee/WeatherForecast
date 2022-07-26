@@ -66,7 +66,7 @@ a{
   margin-bottom: 40px;
   height: 55px;
   text-indent: 33px;
-  border-radius: 23px;
+  border-radius: 24px;
 }
 .form-input:focus {
   box-shadow: none;
@@ -97,7 +97,7 @@ div.col-6 {
 }
 div.row.f:hover {
   background-color: rgba(83, 83, 83, 0.453);
-  border-radius: 20px;
+  border-radius: 23px;
   transition: 200ms ease-in-out;
 }
 .search {
@@ -107,7 +107,7 @@ div.row.f:hover {
 .image {
   margin: 20px auto;
   display: block;
-  width: 150px;
+  width: 180px;
   height: 150px;
   filter: drop-shadow(17px 10px 18px rgba(23, 23, 23, 0.4));
 }
@@ -117,6 +117,9 @@ div.row.f:hover {
 }
 .city:first-letter {
     text-transform: uppercase;
+}
+.status:first-letter{
+  text-transform: uppercase;
 }
 .hightemp {
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.705);

@@ -12,6 +12,49 @@ let daylist = [
   "Saturday",
 ];
 
+/* weather icon */
+
+function weathericon(status){
+  if (status === "01d"){
+    document.querySelector("img").src = "images/sun/26.png"
+  }
+  else if (status === "02d"){
+    document.querySelector("img").src = "images/sun/27.png"
+  }
+  else if (status === "03d"){
+    document.querySelector("img").src = "images/cloud/33.png"
+  }
+  else if (status === "04d"){
+    document.querySelector("img").src = "images/sun/4.png"
+  }
+  else if (status === "50d"){
+    document.querySelector("img").src = "images/cloud/35.png"
+  }
+  else if (status === "09d"){
+    document.querySelector("img").src = "images/cloud/7.png"
+  }
+  else if (status === "10d"){
+    document.querySelector("img").src = "images/cloud/5.png"
+  }
+  else if (status === "11d"){
+    document.querySelector("img").src = "images/cloud/17.png"
+  }
+  else if (status === "13d"){
+    document.querySelector("img").src = "images/cloud/23.png"
+  }
+  else if (status === "01n"){
+    document.querySelector("img").src = "images/moon/10.png"
+  }
+  else if (status === "02n"){
+    document.querySelector("img").src = "images/moon/15.png"
+  }
+  else if (status === "03n"){
+    document.querySelector("img").src = "images/moon/41.png"
+  }
+  else if (status === "04n"){
+    document.querySelector("img").src = "images/cloud/35.png"
+  }
+}
 /* search engine */
 
 function showTemperature(response) {
@@ -20,6 +63,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   document.querySelector("#humidity").innerHTML = `${Math.round(response.data.main.humidity)} %`;
   document.querySelector("#status").innerHTML = `${response.data.weather[0].description}`;
+  weathericon(response.data.weather[0].icon);
   celsiushightemp = Math.round(response.data.main.temp);
   celsiuslowtemp = Math.round(response.data.main.temp_min);
 }
@@ -73,4 +117,5 @@ document.querySelector("#celsius").addEventListener("click", fToC);
 
 let celsiushightemp = null;
 let celsiuslowtemp = null;
+
 search("Berlin");
