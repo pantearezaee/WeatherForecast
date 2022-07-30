@@ -6,12 +6,12 @@ body {
 header {
   background: rgb(87, 214, 255);
   background: linear-gradient(
-    180deg,
+  180deg,
     rgba(87, 214, 255, 0.9472382703081232) 0%,
     rgba(88, 172, 255, 1) 35%,
     rgba(0, 97, 213, 1) 100%
-
-  /*0deg,
+/*  
+  0deg,
   hsl(244deg 67% 51%) 0%,
   hsl(242deg 68% 53%) 10%,
   hsl(240deg 69% 55%) 20%,
@@ -22,7 +22,7 @@ header {
   hsl(223deg 73% 59%) 70%,
   hsl(217deg 71% 58%) 80%,
   hsl(210deg 70% 58%) 90%,
-  hsl(203deg 70% 56%) 100%*/
+  hsl(203deg 70% 56%) 100% */
 );
   color: snow;
   margin: auto 10% 30px;
@@ -30,7 +30,7 @@ header {
   /*box-shadow: 0px 12px 50px 11px rgba(45, 174, 240, 0.81);*/
 
   box-shadow: 0px 10px 13px -7px #000000,
-    0px 16px 25px 1px rgba(0, 48, 206, 0.82);
+    0px 16px 25px 1px rgba(1, 54, 231, 0.82);
 }
 li {
   list-style: none;
@@ -62,11 +62,15 @@ a{
   border-left: 1px solid #d1d5db;
 }
 .form-input {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 40px;
   height: 55px;
   text-indent: 33px;
-  border-radius: 24px;
+  border-radius: 23px;
+}
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 72%;
 }
 .form-input:focus {
   box-shadow: none;
@@ -74,42 +78,47 @@ a{
 }
 ul.tomorrowforcast {
   text-align: left;
-  margin: 30px 0 0 0;
-  padding: 0 0 0 60px;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 30px;
 }
 ul.headerlist {
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 0;
-  margin: 5px auto;
+  margin: 2px auto 5px;
+}
+div.col-5 {
+  text-align: center;
+  margin: 10px auto;
+  padding: 0;
 }
 div.col-6 {
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 0;
 }
 .col-4 {
   color: rgba(214, 214, 214, 0.753);
   font-size: 18px;
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 10px 0;
 }
 div.row.f:hover {
   background-color: rgba(83, 83, 83, 0.453);
-  border-radius: 25px;
-  transition: 200ms ease-in-out;
+  border-radius: 31px;
+  transition: 150ms ease-in-out;
 }
 .search {
   text-align: center;
   margin: 0 30px;
 }
 .image {
-  margin: 20px auto;
+  margin: 10px auto;
   display: block;
   width: 180px;
   height: 150px;
-  filter: drop-shadow(17px 10px 18px rgba(23, 23, 23, 0.4));
+  filter: drop-shadow(15px 10px 15px rgba(10, 0, 65, 0.6));
 }
 .city {
   font-size: 25px;

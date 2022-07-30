@@ -11,7 +11,14 @@ let daylist = [
   "Friday",
   "Saturday",
 ];
-
+let minute = today.getMinutes();
+if (minute<10){
+  minute = `0${minute}`;
+}
+let hour = today.getHours();
+if (hour<10){
+  hour = `0${hour}`;
+}
 /* weather icon */
 
 function weathericon(status){
@@ -117,13 +124,13 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = "";
   forecast.forEach(function (forecastDay, index) {
-    if (index >0  && index<6) {
+    if (index > 0 && index < 6) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="row f">
+        <div class="row f">
         <div class="col-4 five">${formatDay(forecastDay.dt)}</div>
         <div class="col-4">        <img
           src="http://openweathermap.org/img/wn/${
@@ -132,17 +139,18 @@ function displayForecast(response) {
           alt=""
           width="42"
         /> ${forecastDay.weather[0].description}</div>
-        <div class="col-4"><span class="ht">+${Math.round(forecastDay.temp.max)}°
+        <div class="col-4"><span class="ht">+${Math.round(
+          forecastDay.temp.max
+        )}°
           </span> +${Math.round(forecastDay.temp.min)}°</div>
-      </div>
+        </div>
   `;
     }
-   
   });
 
-  forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+ 
 
 function getForecast(coordinates) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";;
@@ -151,7 +159,7 @@ function getForecast(coordinates) {
 }
 
 document.getElementById("displayDateTime").innerHTML =
-  daylist[day] + "  " + today.getHours() + ":" + today.getMinutes();
+  daylist[day] + "  " + hour + ":" + minute;
 
 document.querySelector("#searchicon").addEventListener("click", changeCitySubmit);
 document.querySelector("#form").addEventListener("keypress", changeCityEnter);
